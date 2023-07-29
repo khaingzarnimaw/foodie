@@ -23,9 +23,11 @@ useEffect(() => {
 return ( 
   <>
   {isLoading ? (
-     <h1>loading...</h1> 
+     <div className='text-xl font-bold tracking-widest flex justify-center items-center h-screen    '>
+      <h1> Loading...</h1> 
+      </div>
    
-     ): (<div className='flex flex-wrap gap-5 py-10'>
+     ): (<div className='flex flex-wrap gap-5 justify-center items-center'>
       {/* {meals?.map()=><h1 key={idMeal}>{strmael}</h1>} */}
       {/* {meals?.map((meal)=> <h1 key={meal.idMeal}>{meal.strMeal}</h1> )} */}
       {meals?.map((meal)=> ( 

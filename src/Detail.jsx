@@ -13,7 +13,7 @@ const Detail = () => {
   //useParams  ကိုခေါ်ထားတဲ့ function
   const getSingleMeal = async() =>{
     const{data} = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
-    console.log(data.meals[0]);
+    // console.log(data.meals[0]);
      setMeals(data?.meals[0])
      setIsLoading(false);
   }
@@ -23,10 +23,10 @@ const Detail = () => {
   return (
     <>
     {isLoading? (
-      <Loading/> 
+      <Loading /> 
       ):(
     // <div>Detail - {id}</div> (id ထွက်လားမထွက်လား အရင်စစ်ထားတာ)(${id} ရဲ့လုပ်ဆောင်ချက်)
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col gap-5 ml-10 my-2'>
       <img src={meal.strMealThumb} alt="" width={"300px"} className="rounded-xl shadow-xl"/>
       <div className="text-white bg-pink-500 w-20 text-center textt-sm rounded-lg">{meal.strCategory}</div>
       <h1 className="text-2xl">{meal.strMeal}</h1>
