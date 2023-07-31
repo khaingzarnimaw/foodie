@@ -36,7 +36,7 @@ const Detail = () => {
       </div>
     <div className='flex gap-5 items-center'>
       
-      <a href={meal.strYoutube} target="__blank"><AiFillYoutube className='text-red-600 text-5xl cursor-pointer'/></a> 
+      <a href={meal.strYoutube} ><AiFillYoutube className='text-red-600 text-5xl cursor-pointer' target="_blank"/></a> 
       <p className="text-gray-500">Watch on YouTobe</p>
     </div>
    </div>)}
